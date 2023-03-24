@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "TT Lakes";
+    src: local("TT Lakes Regular"), local("TT-Lakes-Medium"),
+      url("assets/fonts/TTLakes-Regular.woff") format("woff"),
+      url("assets/fonts/TTLakes-Regular.eot") format("eot"),
+      url("assets/fonts/TTLakes-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "TT Lakes";
+    src: local("TT Lakes Medium"), local("TT-Lakes-Medium"),
+      url("assets/fonts/TTLakes-Medium.woff") format("woff"),
+      url("assets/fonts/TTLakes-Medium.eot") format("eot"),
+      url("assets/fonts/TTLakes-Medium.ttf") format("ttf");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "TT Lakes";
+    src: local("TT Lakes Bold"), local("TT-Lakes-Bold"),
+      url("assets/fonts/TTLakesCondensed-Bold.woff") format("woff"),
+      url("assets/fonts/TTLakesCondensed-Bold.eot") format("eot"),
+      url("assets/fonts/TTLakesCondensed-Bold.ttf") format("ttf");
+    font-weight: 700;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  * {
+    font-family: "TT Lakes", "Arial", sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+
+.body {
+    margin: 0;
+    max-width: 320px;
+    box-shadow: -5px 5px 30px -15px black;
+    min-height: 1120px;
+}
+.header {
+    height: 100px;
+}
+.header__menu {
+    list-style: none;
+    display: flex;
+}
+
+.header__item--burger {
+    margin: 24px 16px 16px 24px;
+}
+.header__btn {
+    border: none;
+    background-color: transparent;
+    
+}
+.header__btn:hover {
+  cursor: pointer;
+
+}
+
+.header__item--logo {
+    margin-top: 18px;
+  }
+  
+.header__item--search {
+    margin: 24px 24px 16px 78px;
+  }
+
+  
+  /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^header^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+.main {
+    display: flex;
+  }
+
+
+.nav__link {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px 16px;
+}
+
+.nav__link:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transform: scale(0.95);
+  transition-duration: 0.3s;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+}
+
+.nav__item:hover::before{
+  content: url("assets/img/highlight.svg");
+  position: absolute;
+  margin: 7px 0 0 0;
+}
+
+
+.main__menu {
+  display: flex;
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.main__btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  margin-right: 16px;
+}
+
+.main__btn{
+  cursor: pointer;
+}
+
+
+.main__btn--phone {
+  margin-left: 24px;
+}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^main^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+.footer{
+  margin-top: 350px;
+}
+
+.contacts__email {
+  margin-left: 24px;
+  margin-bottom: 12px;
+}
+.contacts__phoneNumber {
+  margin-left: 24px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.footer__lang {
+  margin-left: 24px;
+  margin-bottom: 32px;
+}
+
+.lang__btn{
+  border: none;
+  background-color: transparent;
+  margin-right: 7px;
+}
+
+.lang__btn:hover{
+  cursor: pointer;
+}
+
+.lang__btn {
+  transition-duration: 0.3s;
+  cursor: pointer;
+  margin-right: 7px;
+  }
+.lang__btn:hover {
+  transform: scale(1.2);
+  }
+.lang__btn--active {
+    font-weight: bold;
+  }
+.lang__btn--active:hover {
+  cursor: default;
+  transform: none;
+  }
