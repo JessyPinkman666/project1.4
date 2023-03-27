@@ -179,23 +179,19 @@ html {
   margin-right: 7px;
 }
 
-.lang__btn:hover {
-  cursor: pointer;
-}
-
 .lang__btn {
   display: inline-block;
   width: 24px;
   transition-duration: 0.3s;
   cursor: pointer;
   margin-right: 7px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .lang__btn:hover {
-  transform: scale(0.9);
+  transform: scale(1.05);
   opacity: 0.6;
 }
 .lang__btn:focus {
-  transform: scale(0.9);
+  transform: scale(1.05);
   opacity: 0.6;
 }
