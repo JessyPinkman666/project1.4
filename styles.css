@@ -41,8 +41,10 @@ html {
 
 .body {
   margin: 0;
+  padding: 0;
   max-width: 320px;
   box-shadow: -5px 5px 30px -15px black;
+  font-family: "TT Lakes", sans-serif;
 }
 .header {
   height: 100px;
@@ -137,10 +139,10 @@ html {
 
 .wrapper {
   display: flex;
-  height: 91vh;
+  height: 100vh;
   flex-direction: column;
   justify-content: space-between;
-
+  padding: 0;
 
 }
 
@@ -179,6 +181,10 @@ html {
   margin-right: 7px;
 }
 
+.lang__btn:hover {
+  cursor: pointer;
+}
+
 .lang__btn {
   display: inline-block;
   width: 24px;
@@ -195,3 +201,4 @@ html {
   transform: scale(1.05);
   opacity: 0.6;
 }
+
